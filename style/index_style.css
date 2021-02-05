@@ -62,6 +62,16 @@
 }
 
 /* ============================== form of searching ==============================*/
+
+.form__bg{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: 200vh;
+    background: url('../media/images/road.jpg') center/ cover no-repeat;
+    filter: blur(3px);
+}
+
 .form{
    
     position: relative;
@@ -75,53 +85,28 @@
 .form__body{
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     width: 900px;
     padding: 32px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.479);
     background-color: #0071f0;
-    flex-wrap: wrap;
     height: 300px;
     border-radius: 5px;
 }
-
-.form__input,
-.form__button,
-.form__input1{
-    font-size: 1.1em;
-}
-
 .form__title{
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 72px;
     font-weight: normal;
     font-size: 2em;
     color: #fff;
 }
 
-.form__bg{
-    position: absolute;
-    width: 100%;
-    min-height: 100vh;
-    top: 200vh;
-    background: url('../media/images/road.jpg') center/ cover no-repeat;
-    filter: blur(3px);
-}
-
 .form__maingroup{
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-
-    
 }
 
-
-.form__group, .form__group1{
-    position: relative;
-    margin-bottom: 32px;
-
-
+.form__group1{
+    width: 72px;
 }
 
 .form__label{
@@ -133,36 +118,48 @@
     transition: 0.3s;
 }
 
-
-.form__input, .form__input1{
-   
+.form__input{
     position: relative;
     z-index: 3;
-    width: 100%;
+
+    width: 165px;
     height: 60px;
-    padding-bottom: 10px;
+    padding: 5px;    
+
+    outline: none;
     border: none;
     background-color:  #ffffff;
-    padding: 5px;
-    outline: none;
+    
     transition: 0.1s;
+
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
 }
 
-.form__input:focus,.form__input1:focus{
+.form__counter{
+    width:72px;
+}
+
+
+.form__input:focus{
     border: 2px solid #ff8000;
 }
 
 .form__button{
     padding: 10px 20px;
+
     border: none;
-    color: #fff;
+    
     height: 60px;
+
+    color: #fff;
     background-color: #ff8000;
     outline: none;
+
     cursor: pointer;
     transition: 0.3s;
+
+    font-size: 1.1em;
 }
 
 .form__button:focus,
@@ -179,4 +176,22 @@ background-color: rgba(248, 141, 0, 0.746);
 .form__button{
     border-top-right-radius:5px;
     border-bottom-right-radius:5px;
+}
+
+
+#autocomplite_list,#autocomplite_list1 {
+    display: none;
+    position: relative;
+    /* left: 0; */
+    top: -24px; 
+    border: 1px solid rgb(150,150,150);
+    z-index: 999999999999999999;
+    background: #fff;
+    max-height: 250px;
+    overflow: auto;
+    /* margin-top: 1px; */
+}
+#autocomplite_list div:hover,#autocomplite_list1 div:hover {
+    background: #eee;
+    cursor: pointer;
 }

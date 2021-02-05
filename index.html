@@ -51,32 +51,32 @@
         <div class="form__maingroup">
         <div class="form_group">
 
-            <input class="form__input first" id="country1" type="text" name="from" placeholder="From">
+            <input class="form__input first" id="country" type="text" name="from" placeholder="From">
             <label class="form__label" for="from">From</label>
-            <div id="autocomplite_list1"></div>
+            <div id="autocomplite_list"></div>
             </div>
             
-            <div class="form_group">
-            <input class="form__input" id="country" type="text" name="To" placeholder="To">
+            <div class="form__group">
+            <input class="form__input" id="country1" type="text" name="To" placeholder="To">
             
             <label class="form__label" for="To" >To</label>
-            <div id="autocomplite_list"></div>
+            <div id="autocomplite_list1"></div>
             </div>
         
 
-        <div class="form_group1">
+        <div class="form__group">
             <input class="form__input" type="date" name="departure_date" placeholder=" ">
             <label class="form__label" for="departure_date">Departure date</label>
 
         </div>
-        <div class="form_group1">
+        <div class="form__group">
             
             <input class="form__input" type="date" name="return_date">
             <label class="form__label" for="return_date">Return date</label>
         </div>
 
-        <div class="form_group1">
-            <input class="form__input"  type="number"  min="1" max="10" placeholder="1" name="passengers">     
+        <div class="form__group1">
+            <input class="form__input form__counter"  type="number"  min="1" max="10" placeholder="1" name="passengers">     
             <label class="form__label" for="passengers" >Passengers</label>
 
         </div>
@@ -111,5 +111,6 @@
 
 </div>
 <script src="js\main.js"></script>
+<script src="js\list.js"></script>
 </body>
 </html>
