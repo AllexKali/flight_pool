@@ -1,0 +1,152 @@
+.wrapper{
+    overflow: hidden;
+    max-width: 99vw;
+}
+.clouds{
+    position: absolute;
+    z-index: 1;
+    top:200px;
+}
+
+.clouds img{
+    width: 500px;
+}
+
+.clouds__f{
+    transform: translate(-350px,0);
+    opacity: 0;
+    transition: all 2.8s;
+}
+.clouds__t{
+    top:400px;
+    right: 0px;
+    transform: translate(250px,0);
+    opacity: 0;
+    transition: all 1.8s;
+    transition-delay: 0.5s;
+}
+
+.clouds__f._active{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.clouds__t._active{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+
+.promotion {
+    background: #0071f0;
+    color: #0f0f0f;
+    min-height: 100vh;
+    display: flex;
+}
+
+.promotions__body {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     overflow: hidden; 
+}
+
+
+.promotions__slider{
+    max-width: 920px;
+margin: 0 auto;
+overflow: hidden;
+
+}
+
+.promotions__slider_line{
+    height: 580px;
+    display: flex;
+    transition: all ease 1s;
+}
+
+.promotions_list-item {
+    text-align: justify;
+    width: 440px;
+    margin: 10px;
+    background: rgb(246, 251, 255);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.promotions_list-item:hover{
+transform: scale(1.009);
+}
+
+.promotion img {
+    width: 400px;
+    height: 233px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.promotions__description {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.promotion a {
+    color: #0f0f0f;
+    text-decoration: underline;
+}
+
+.promotion h3 {
+letter-spacing: 2px;
+margin-bottom: 10px;
+}
+
+
+
+.promotions__button {
+    align-self: flex-end;
+}
+.promotion__sliderBut {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    -ms-user-select: none; user-select: none;
+    border-radius: 50%;
+    font-size: 50px;
+    background: #fff;
+    color:#0071f0;
+    box-shadow: 2px 2px 10px #2c2c2c5e;
+    margin: 5px;
+}
+
+
+.promotion__sliderBut span{
+    position: relative;
+    top:-7px;
+    left:1px;
+    z-index: 5;
+} 
+
+#butLeft span{
+top:-8px;
+left: -2px;
+}
+
+#butRight:hover, 
+#butLeft:hover{
+    position: relative;
+    top:2px;
+    background: #e5eaf0;
+} 
+
+._slideR{
+transform: translate(-460px,0);
+
+}

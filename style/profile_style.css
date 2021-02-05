@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');/* Обнуление */
+
+.form__bg{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: url('../media/images/road2.jpg') center/ cover no-repeat;
+    filter: blur(3px);
+}
+
+ .form {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+.form__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+ 
+}
+.form_frame{
+    width: 500px;
+    padding: 100px 32px;
+    border-radius: 10px ;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.479);
+    background: rgb(251, 251, 251);
+    letter-spacing: 1px;
+}
+
+.form__title{
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-size: 1.9rem;
+}
+.gorm__group {
+    position: relative;
+    margin-bottom: 32px;
+}
+.form__input,
+.form__button {
+    position: relative;
+    z-index: 3;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem; 
+    letter-spacing: 1px;
+}
+.form__label {
+    position: relative;
+    top: -35px;
+    z-index: 1;
+    color: #9e9e9e;
+    transition: 0.3s;
+}
+
+.form__input{
+    width: 100%;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom:  1px solid #e0e0e0;
+    background: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form__button{
+    background: #0071f0;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form__button:hover,
+.form__button:focus{
+    background: #0071f0b3;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown)~ .form__label{
+    position: relative;
+    top:-60px
+} 

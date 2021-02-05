@@ -1,0 +1,38 @@
+.header {
+    background: #0071f0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 1em;
+    z-index: 3;
+    letter-spacing: 2px;
+}
+.header a{
+    color: #fff;
+}
+
+.header a:hover{
+    text-decoration: underline;
+    color: #dbecff;
+}
+
+.header__body{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__img {
+    height: 60px;
+}
+.header img{
+    height: 60px;
+    object-fit: cover;
+}
+.header__nav {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}

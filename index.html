@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Pool</title>
+    <link rel="stylesheet" type="text/css" href="style\index_style.css">
+    <link rel="stylesheet" type="text/css" href="style\main_style.css">
+    <link rel="stylesheet" type="text/css" href="style\header.css">
+    <link rel="stylesheet" type="text/css" href="style\footer.css">
+</head>
+<body>
+    <!--=============================== Облочка ===============================-->
+<div class="wrapper">
+    <!--=============================== Хедер ===============================-->
+    <header class="header">
+        <div class="header__body">
+        <div class="header__img"><img src="media\logov2.png" alt=""></div>
+
+        <div class="header__nav">
+            <div class="header__navEl"><a href="promotions.html">promotions</a></div>
+            <div class="header__navEl"><a href="index.html#find">search</a></div>
+            <div class="header__navEl"><a href="contact.html">contact</a></div>
+            <div class="header__navEl"><a href="profile.html">profile</a></div>
+        </div>
+        </div>
+    </header>
+
+    <!--=============================== Контент ===============================-->
+    <section class="description">
+        <div class="description__body">
+            <div class="description__img _anim-items _non-anim">
+            </div>
+            <div class="description__cicly"></div>
+            <div class="description__text _anim-items _non-anim">
+                <p><span style="font-weight: 600;">Flight Pool</span> 
+                    is a new and energetic airline providing passenger air transportation services with small, small-sized planes. The company's main goal is to develop connectivity between Russian cities by organizing flights on a nonpermanent basis as flight requests accumulate. </p>
+            </div>
+        </div>
+    </section> 
+
+<section class="pseParalsx"></section>
+
+    <!--=============================== Форма поиска ===============================-->
+
+<div class="form__bg"></div>
+<section class="form" id="find">
+    <form class="form__body">
+        <h1 class="form__title">Find your trip!</h1>
+        
+        <div class="form__maingroup">
+        <div class="form_group">
+
+            <input class="form__input first" id="country1" type="text" name="from" placeholder="From">
+            <label class="form__label" for="from">From</label>
+            <div id="autocomplite_list1"></div>
+            </div>
+            
+            <div class="form_group">
+            <input class="form__input" id="country" type="text" name="To" placeholder="To">
+            
+            <label class="form__label" for="To" >To</label>
+            <div id="autocomplite_list"></div>
+            </div>
+        
+
+        <div class="form_group1">
+            <input class="form__input" type="date" name="departure_date" placeholder=" ">
+            <label class="form__label" for="departure_date">Departure date</label>
+
+        </div>
+        <div class="form_group1">
+            
+            <input class="form__input" type="date" name="return_date">
+            <label class="form__label" for="return_date">Return date</label>
+        </div>
+
+        <div class="form_group1">
+            <input class="form__input"  type="number"  min="1" max="10" placeholder="1" name="passengers">     
+            <label class="form__label" for="passengers" >Passengers</label>
+
+        </div>
+
+
+            <button class="form__button">search</button>
+        </div>
+
+    </form>
+</section>
+
+
+
+
+    <!--=============================== Футер ===============================-->
+
+
+<footer class="footer">
+    <div class="footer__body">
+    <div class="footer__number">8 (800) 100-10-10</div>
+    <ul class="footer__ul">
+        <li class="footer__li"><a href="">Home</a></li>
+        <li class="footer__li"><a href="">Login</a></li>
+        <li class="footer__li"><a href="">Sign up</a></li>
+        <li class="footer__li"><a href="">Contact</a></li>
+        <li class="footer__li"><a href="">News</a></li>
+        <li class="footer__li"><a href="">Return </a></li>   
+        <li class="footer__li"><a href="">Feedback </a></li>   
+    </ul>
+</div>
+</footer>
+
+</div>
+<script src="js\main.js"></script>
+</body>
+</html>

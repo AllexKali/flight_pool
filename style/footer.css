@@ -1,0 +1,31 @@
+.footer {
+    background: #141414;
+    color: #FFF;
+    display: flex;
+    padding: 20px 0;
+    font-size: 0.8em;
+    width: 100%;
+}
+.footer a{
+    color: #FFF;
+
+}
+.footer__body {
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 40px;
+}
+.footer__number {
+    width: 100%;
+    text-align: center;
+}
+.footer__ul {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    list-style-type:none;
+    justify-content: center;
+}
+.footer__li {
+    padding-left: 50px;
+}
